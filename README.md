@@ -61,8 +61,8 @@ gradle.bat task
 The application uses by default the robotic arm on dry-run to manifest the temperature (i.e. the `ThingArtifact` only prints the HTTP request to the robotic arm without executing the request). Follow these steps, if you want to test your application with the real [PhantomX Reactor Robot Arm](https://www.trossenrobotics.com/p/phantomx-ax-12-reactor-robot-arm.aspx) that is located at the Interactions lab:
 - Register as an operator of the robotic arm using the [HTTP API](https://interactions-hsg.github.io/leubot/#/user/addUser) of the arm and your credentials, e.g.:
 ```
-curl --location 'https://api.interactions.ics.unisg.ch/leubot1/v1.3.4/user' \
---header 'Content-Type: application/json' \
+curl --location 'https://api.interactions.ics.unisg.ch/leubot1/v1.3.4/user' 
+--header 'Content-Type: application/json' 
 --data-raw '{
     "name": "Danai V.",
     "email": "danai.vachtsevanou@unisg.ch"
